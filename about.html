@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cfd058d1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <a
+              class="navbar-brand animate__animated animate__lightSpeedInLeft"
+              href="./index.html"
+            >
+              <i class="bi bi-card-checklist"></i>
+              Assignment 1
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 animate__animated animate__lightSpeedInLeft"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+              <ul
+                class="navbar-nav d-flex animate__animated animate__lightSpeedInRight"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="https://github.com/akshayrajk13"
+                    target="_blank"
+                    ><i class="bi bi-github"></i
+                    ><span class="d-lg-none ms-1">GitHub</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="https://linkedin.com/in/akshayraj13"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i
+                    ><span class="d-lg-none ms-1">LinkedIn</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.instagram.com/akshayrajk13"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i
+                    ><span class="d-lg-none ms-1">Instagram</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://api.whatsapp.com/send?phone=919496153772"
+                    target="_blank"
+                    ><i class="bi bi-whatsapp"></i
+                    ><span class="d-lg-none ms-1">WhatsApp</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://t.me/akshayrajk13"
+                    target="_blank"
+                    ><i class="bi bi-telegram"></i
+                    ><span class="d-lg-none ms-1">Telegram</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="mailto:akshayrajk13@gmail.com"
+                    target="_blank"
+                    ><i class="bi bi-google"></i
+                    ><span class="d-lg-none ms-1">Gmail</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid">
+        <div class="row align-items-center position-relative bg-animated p-5">
+          <div
+            id="particles-js"
+            class="animate__animated animate__fadeIn"
+          ></div>
+          <div
+            class="bg-overlay position-absolute top-0 start-0 w-100 h-100"
+            style="z-index: -1"
+          ></div>
+          <div
+            class="col-12 col-md-6 text-center animate__animated animate__backInLeft"
+          >
+            <img
+              src="./images/photo.jpg"
+              class="img-fluid rounded-circle shrink"
+              style="width: 250px; height: 250px; object-fit: cover"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <h2
+              class="mb-4 animate__animated animate__tada"
+              style="font-family: 'Bebas Neue', serif"
+            >
+              Hi, I'm Akshay
+            </h2>
+            <p>
+              I&apos;m a passionate web developer with expertise in Angular,
+              React, JavaScript, Node.js, HTML, and CSS. With a focus on
+              building clean, functional, and responsive websites, I strive to
+              deliver seamless user experiences. I love tackling new challenges,
+              staying updated with the latest technologies, and continuously
+              improving my skills.
+            </p>
+            <h5 style="font-family: 'Bebas Neue', serif">I'm good at:</h5>
+            <ul class="list-group">
+              <li class="list-group-item bg-light border-0">
+                Building Single Page Applications (SPAs) with Angular and React
+              </li>
+              <li class="list-group-item bg-light border-0">
+                Creating RESTful APIs using Node.js
+              </li>
+              <li class="list-group-item bg-light border-0">
+                Responsive web design with HTML, CSS, and Bootstrap
+              </li>
+            </ul>
+            <a
+              href="./assets/Resume.pdf"
+              download="Resume.pdf"
+              class="btn btn-dark btn-lg px-4 py-2 mt-3"
+              style="font-family: 'Bebas Neue', serif"
+            >
+              Download my Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid m-0 p-0">
+        <div class="marquee">
+          <ul class="marquee__content">
+            <span><i class="fab fa-html5 text-danger"></i> HTML</span>
+            <span><i class="fab fa-css3-alt text-primary"></i> CSS</span>
+            <span><i class="fab fa-js text-warning"></i> JavaScript</span>
+            <span><i class="fab fa-bootstrap text-purple"></i> Bootstrap</span>
+            <span><i class="fab fa-angular text-danger"></i> Angular</span>
+            <span><i class="fab fa-react text-info"></i> React</span>
+            <span><i class="fab fa-node text-success"></i> Node.js</span>
+            <span><i class="fas fa-server text-secondary"></i> Express.js</span>
+            <span><i class="fas fa-database text-success"></i> MongoDB</span>
+          </ul>
+
+          <ul aria-hidden="true" class="marquee__content">
+            <span><i class="fab fa-html5 text-danger"></i> HTML</span>
+            <span><i class="fab fa-css3-alt text-primary"></i> CSS</span>
+            <span><i class="fab fa-js text-warning"></i> JavaScript</span>
+            <span><i class="fab fa-bootstrap text-purple"></i> Bootstrap</span>
+            <span><i class="fab fa-angular text-danger"></i> Angular</span>
+            <span><i class="fab fa-react text-info"></i> React</span>
+            <span><i class="fab fa-node text-success"></i> Node.js</span>
+            <span><i class="fas fa-server text-secondary"></i> Express.js</span>
+            <span><i class="fas fa-database text-success"></i> MongoDB</span>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid pt-5 about-banner-background">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div
+              class="d-flex flex-column justify-content-start bg-light border-0 rounded-5 shadow-lg p-3 h-100 about-banner-card-background animate__animated animate__fadeIn"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-code fa-3x text-primary"></i>
+              </div>
+              <div>
+                <h4
+                  class="h4 text-center"
+                  style="font-family: 'Bebas Neue', serif"
+                >
+                  Modern Technologies
+                </h4>
+                <hr class="separator" />
+                <p class="text-center">
+                  Proficient in React, Angular, and Bootstrap for building
+                  scalable applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="d-flex flex-column justify-content-start bg-light border-0 rounded-5 shadow-lg p-3 h-100 about-banner-card-background animate__animated animate__fadeIn"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-laptop-code fa-3x text-success"></i>
+              </div>
+              <div>
+                <h4
+                  class="h4 text-center"
+                  style="font-family: 'Bebas Neue', serif"
+                >
+                  Responsive Design
+                </h4>
+                <hr class="separator" />
+                <p class="text-center">
+                  Ensuring seamless user experiences across desktops, tablets,
+                  and mobile devices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="d-flex flex-column justify-content-start bg-light border-0 rounded-5 shadow-lg p-3 h-100 about-banner-card-background animate__animated animate__fadeIn"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center mb-3"
+              >
+                <i class="fas fa-plug fa-3x text-warning"></i>
+              </div>
+              <div>
+                <h4
+                  class="h4 text-center"
+                  style="font-family: 'Bebas Neue', serif"
+                >
+                  API Integration
+                </h4>
+                <hr class="separator" />
+                <p class="text-center">
+                  Expert in integrating RESTful APIs to create dynamic,
+                  data-driven applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-5 skills-background">
+        <h1
+          id="skills"
+          class="display-1 mb-4"
+          style="font-family: 'Bebas Neue', serif"
+        >
+          Skills
+        </h1>
+        <div class="row g-3">
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-angular text-danger fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">Angular</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="60"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-react text-info fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">React</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="80"
+                  aria-valuenow="80"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-node-js text-success fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">Node.js</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="70"
+                  aria-valuenow="70"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-html5 text-danger fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">HTML & CSS</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="95"
+                  aria-valuenow="95"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-bootstrap text-purple fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">Bootstrap</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-purple"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="90"
+                  aria-valuenow="90"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fab fa-js text-warning fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">JavaScript</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="90"
+                  aria-valuenow="90"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fas fa-server text-secondary fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">Express.js</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="75"
+                  aria-valuenow="75"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center p-3 bg-transparent border-0">
+              <i class="fas fa-database text-success fs-3"></i>
+              <span class="text-uppercase fw-medium mt-2">MongoDB</span>
+              <div class="progress mt-3" style="height: 8px">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 0"
+                  data-width="75"
+                  aria-valuenow="88"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid timeline-background">
+        <div class="row mt-5 p-5">
+          <div class="col-12 offset-xl-1 col-xl-6 my-auto">
+            <div class="timeline">
+              <div
+                class="timeline-item left"
+                onmouseover="changeImage('./images/mashupstack.svg')"
+              >
+                <span class="timeline-marker"></span>
+                <div class="timeline-content bg-dark text-light animate-left">
+                  <h5>2024</h5>
+                  <p>
+                    Full Stack Web Development in <b>MERN Stack</b> from
+                    <b>MashupStack</b>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="timeline-item right"
+                onmouseover="changeImage('./images/graduation.svg')"
+              >
+                <span class="timeline-marker"></span>
+                <div class="timeline-content bg-dark text-light animate-right">
+                  <h5>2014-2017</h5>
+                  <p><b>B.Sc. Computer Science</b></p>
+                </div>
+              </div>
+              <div
+                class="timeline-item left"
+                onmouseover="changeImage('./images/highersecondary.svg')"
+              >
+                <span class="timeline-marker"></span>
+                <div class="timeline-content bg-dark text-light animate-left">
+                  <h5>2014</h5>
+                  <p><b>Plus Two</b></p>
+                </div>
+              </div>
+
+              <div
+                class="timeline-item right"
+                onmouseover="changeImage('./images/school.svg')"
+              >
+                <span class="timeline-marker"></span>
+                <div class="timeline-content bg-dark text-light animate-right">
+                  <h5>2012</h5>
+                  <p><b>Tenth</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-5 text-center my-auto d-none d-xl-block">
+            <img
+              id="mainImage"
+              class="img-fluid w-75 mx-auto d-block animate-right"
+              src="./images/timeline.svg"
+              alt="Timeline"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid p-5 footer-background">
+      <div class="row wow animate__animated animate__fadeInUp">
+        <div class="col-12 col-md">
+          <i class="bi bi-card-checklist"></i>
+          <small class="d-block mb-3 text-muted">&copy; 2025-2026</small>
+        </div>
+        <div class="col-4 col-md">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="/index.html">Portfolio</a></li>
+            <li><a class="text-muted" href="/about.html">About</a></li>
+            <li><a class="text-muted" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md">
+          <h5>Social</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://github.com/akshayrajk13"
+                target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://linkedin.com/in/akshayraj13"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/akshayrajk13"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4 col-md">
+          <h5>Get In Touch</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="nav-link"
+                href="https://api.whatsapp.com/send?phone=919496153772"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://t.me/akshayrajk13"
+                target="_blank"
+                ><i class="bi bi-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="mailto:akshayrajk13@gmail.com"
+                target="_blank"
+                ><i class="bi bi-google"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <button id="goToTop" class="btn">&uarr;</button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const progressBars = document.querySelectorAll(".progress-bar");
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const progressBar = entry.target;
+                const targetWidth = progressBar.getAttribute("data-width");
+                progressBar.style.width = `${targetWidth}%`;
+                observer.unobserve(progressBar);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        progressBars.forEach((progressBar) => observer.observe(progressBar));
+      });
+
+      function changeImage(src) {
+        document.getElementById("mainImage").src = src;
+      }
+
+      new WOW().init();
+
+      particlesJS.load("particles-js", "./assets/particles.json", function () {
+        console.log("Particles.js config loaded successfully!");
+      });
+    </script>
+  </body>
+</html>

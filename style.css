@@ -1,0 +1,451 @@
+@keyframes appear-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-right {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.animate-left {
+  animation: appear-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.animate-right {
+  animation: appear-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.carousel-inner img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fade-on-hover {
+  max-width: 10%;
+  opacity: 0.3 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.fade-on-hover:hover {
+  opacity: 0.5 !important;
+  transform: scale(1.1);
+}
+
+#incrementBtn {
+  z-index: 1;
+}
+
+#percentage {
+  transition: color 0.3s ease;
+}
+
+#percentage.scrolled {
+  color: #007bff;
+}
+
+.list-group-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-animated {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-overlay {
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+  background-size: 200% 200%;
+  animation: gradientMove 3s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+  border: none;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#goToTop:hover {
+  background-color: greenyellow;
+  transform: scale(1.1);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #ff007a, #007bff);
+  background-size: 200% 100%;
+  animation: gradient-animation 3s infinite alternate;
+  transition: width 1.5s ease-in-out;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.shrink {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.shrink:hover {
+  transform: scale(0.95);
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background: lightgrey;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-item .timeline-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: lightseagreen;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item:hover .timeline-marker {
+  background: lightsalmon;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.timeline-item .timeline-content {
+  padding: 1rem;
+  background: whitesmoke;
+  border-radius: 1rem;
+  position: relative;
+  width: 45%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item .timeline-content:hover {
+  transform: scale(1.1);
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+  text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: auto;
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.15rem 1.75rem silver;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem darkgrey;
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.2);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: background-color 0.3s ease-in;
+}
+
+.logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.card:hover .logo {
+  background-color: darkgray;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transition: bottom 0.3s ease;
+  z-index: 5;
+  text-align: center;
+}
+
+.card:hover .card-footer {
+  bottom: 0;
+}
+
+.card-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+
+.card-footer .btn {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.card-background {
+  background-image: url("./images/cardbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-background {
+  background-image: url("./images/welcomebackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.my-journey-background {
+  background-image: url("./images/myjourneybackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.my-projects-background {
+  background-image: url("./images/myprojectsbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline-background {
+  background-image: url("./images/timelinebackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-background {
+  background-image: url("./images/footerbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-background {
+  background-image: url("./images/contactbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.skills-background {
+  background-image: url("./images/skillsbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-banner-background {
+  background-color: #7ed2fb;
+  background-image: linear-gradient(180deg, #7ed2fb 0%, #ffffff 98%);
+}
+
+.about-banner-card-background {
+  background-image: linear-gradient(
+    to right,
+    #e0eafc 0%,
+    #cfdef3 50%,
+    #e0eafc 100%
+  );
+}
+.about-banner-card-background {
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: block;
+}
+
+.about-banner-card-background:hover {
+  background-position: right center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#myCarousel {
+  position: relative;
+  z-index: 1;
+}
+
+.input-color {
+  background-color: Ivory;
+}
+
+.input-color:focus {
+  background-color: LightYellow;
+}
+
+#mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ff8800 !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 136, 0, 0.25) !important;
+  outline: none !important;
+}
+
+.marquee {
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  font-family: "Bebas Neue", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.marquee__content {
+  animation: scroll 10s linear infinite;
+}
